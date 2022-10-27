@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Some Tools</string>
+    
+    <string name="btnConverter">Umrechner</string>
+</resources>
