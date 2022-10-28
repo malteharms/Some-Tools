@@ -14,9 +14,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Buttons" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Buttons" parent="Theme.AppCompat.NoActionBar">
         <item name="android:backgroundTint">@color/bright_grey_blue</item>
-        <item name="android:textColor">@color/white</item>
         <item name="android:textSize">14sp</item>
 
     </style>

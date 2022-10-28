@@ -2,7 +2,11 @@
 <resources>
 
     <dimen name="margin_top">30dp</dimen>
+    <dimen name="margin_left">20dp</dimen>
+    <dimen name="margin_right">20dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
 
-    <dimen name="button_size">130dp</dimen>
+    <dimen name="button_size">110dp</dimen>
+    <dimen name="radius_button_corner">10dp</dimen>
 
 </resources>

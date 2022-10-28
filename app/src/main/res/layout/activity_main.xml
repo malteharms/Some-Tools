@@ -7,6 +7,9 @@
     android:background="@color/dark_grey_blue"
     tools:context=".MainActivity" >
 
+
+    <!-- header title -->
+
     <TextView
         android:id="@+id/tvAppName"
 
@@ -25,16 +28,101 @@
 
         android:layout_marginTop="@dimen/margin_top"/>
 
+
+    <!-- bottom row of buttons -->
+
     <Button
+        android:id="@+id/btnBottomLeft"
+
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+
+        android:text="@string/btnFiller"
+        android:textColor="@color/bright_grey_blue"
+        android:theme="@style/Theme.Buttons"
+
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBottomMid"
+
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+
+        android:text="@string/btnFiller"
+        android:textColor="@color/bright_grey_blue"
+        android:theme="@style/Theme.Buttons"
+
+        android:layout_marginBottom="@dimen/margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBottomRight"
+        app:layout_constraintStart_toEndOf="@+id/btnBottomLeft" />
+
+    <Button
+        android:id="@+id/btnBottomRight"
+
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+
+        android:text="@string/btnFiller"
+        android:textColor="@color/bright_grey_blue"
+        android:theme="@style/Theme.Buttons"
+
+        android:layout_marginEnd="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- top row of buttons -->
+
+    <Button
+        android:id="@+id/btnTopLeft"
+
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+
+        android:text="@string/btnFiller"
+        android:textColor="@color/bright_grey_blue"
+        android:theme="@style/Theme.Buttons"
+
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        app:layout_constraintBottom_toTopOf="@id/btnBottomLeft"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnTopMid"
         android:theme="@style/Theme.Buttons"
 
         android:layout_width="@dimen/button_size"
         android:layout_height="@dimen/button_size"
 
-        android:text="@string/btnConverter"
+        android:text="@string/btnFiller"
+        android:textColor="@color/bright_grey_blue"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginStart="@dimen/margin_left"
+        app:layout_constraintStart_toEndOf="@id/btnTopLeft"
+        app:layout_constraintBottom_toTopOf="@id/btnBottomMid" />
+
+    <Button
+        android:id="@+id/btnTopRight"
+        android:theme="@style/Theme.Buttons"
+
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+
+        android:text="@string/btnFiller"
+        android:textColor="@color/bright_grey_blue"
+
+        android:layout_marginEnd="@dimen/margin_right"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnBottomRight" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
